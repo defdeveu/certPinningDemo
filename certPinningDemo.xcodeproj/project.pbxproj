@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D151E372020AD5500C66E09 /* DSTRootCAX3.crt in Resources */ = {isa = PBXBuildFile; fileRef = 2D151E362020AD5500C66E09 /* DSTRootCAX3.crt */; };
 		2D31EAF220162CFA0075C607 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D31EAF120162CFA0075C607 /* AppDelegate.m */; };
 		2D31EAF520162CFA0075C607 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D31EAF420162CFA0075C607 /* ViewController.m */; };
 		2D31EAF820162CFA0075C607 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D31EAF620162CFA0075C607 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 		2D31EB0020162CFA0075C607 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D31EAFF20162CFA0075C607 /* main.m */; };
 		2D31EB0A20162CFA0075C607 /* certPinningDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D31EB0920162CFA0075C607 /* certPinningDemoTests.m */; };
 		2D31EB1520162CFA0075C607 /* certPinningDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D31EB1420162CFA0075C607 /* certPinningDemoUITests.m */; };
+		2D4F5CCD2020D063006D5758 /* cert.der in Resources */ = {isa = PBXBuildFile; fileRef = 2D151E392020B9E600C66E09 /* cert.der */; };
+		2DF9F8B020190F75007E703D /* olsslgca.cer in Resources */ = {isa = PBXBuildFile; fileRef = 2DF9F8AF20190F75007E703D /* olsslgca.cer */; };
+		597AEDC0D14D0431ADBC765E /* libPods-certPinningDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B2E25830DB1881DBC60D618 /* libPods-certPinningDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B2E25830DB1881DBC60D618 /* libPods-certPinningDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-certPinningDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D151E362020AD5500C66E09 /* DSTRootCAX3.crt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DSTRootCAX3.crt; sourceTree = "<group>"; };
+		2D151E392020B9E600C66E09 /* cert.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = cert.der; sourceTree = "<group>"; };
 		2D31EAED20162CFA0075C607 /* certPinningDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = certPinningDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D31EAF020162CFA0075C607 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2D31EAF120162CFA0075C607 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +58,9 @@
 		2D31EB1020162CFA0075C607 /* certPinningDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = certPinningDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D31EB1420162CFA0075C607 /* certPinningDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = certPinningDemoUITests.m; sourceTree = "<group>"; };
 		2D31EB1620162CFA0075C607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DF9F8AF20190F75007E703D /* olsslgca.cer */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = olsslgca.cer; sourceTree = "<group>"; };
+		374C8992C554513B994A7B7F /* Pods-certPinningDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-certPinningDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-certPinningDemo/Pods-certPinningDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		8F0387C7BABA1001241FD038 /* Pods-certPinningDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-certPinningDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-certPinningDemo/Pods-certPinningDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				597AEDC0D14D0431ADBC765E /* libPods-certPinningDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +96,8 @@
 				2D31EB0820162CFA0075C607 /* certPinningDemoTests */,
 				2D31EB1320162CFA0075C607 /* certPinningDemoUITests */,
 				2D31EAEE20162CFA0075C607 /* Products */,
+				475760E3FF65D60D948CADD4 /* Pods */,
+				EEA8669CB9DECC812DEE95C4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +114,7 @@
 		2D31EAEF20162CFA0075C607 /* certPinningDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2DF9F8AE20190F5C007E703D /* Supporting Files */,
 				2D31EAF020162CFA0075C607 /* AppDelegate.h */,
 				2D31EAF120162CFA0075C607 /* AppDelegate.m */,
 				2D31EAF320162CFA0075C607 /* ViewController.h */,
@@ -132,6 +146,33 @@
 			path = certPinningDemoUITests;
 			sourceTree = "<group>";
 		};
+		2DF9F8AE20190F5C007E703D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2D151E362020AD5500C66E09 /* DSTRootCAX3.crt */,
+				2D151E392020B9E600C66E09 /* cert.der */,
+				2DF9F8AF20190F75007E703D /* olsslgca.cer */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		475760E3FF65D60D948CADD4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				374C8992C554513B994A7B7F /* Pods-certPinningDemo.debug.xcconfig */,
+				8F0387C7BABA1001241FD038 /* Pods-certPinningDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EEA8669CB9DECC812DEE95C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B2E25830DB1881DBC60D618 /* libPods-certPinningDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +180,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D31EB1920162CFA0075C607 /* Build configuration list for PBXNativeTarget "certPinningDemo" */;
 			buildPhases = (
+				E511CC02CAF5C23AD283813A /* [CP] Check Pods Manifest.lock */,
 				2D31EAE920162CFA0075C607 /* Sources */,
 				2D31EAEA20162CFA0075C607 /* Frameworks */,
 				2D31EAEB20162CFA0075C607 /* Resources */,
+				0D8CFD3D24BE1815D5F16A83 /* [CP] Embed Pods Frameworks */,
+				B1FCE351E75A0D9BB92D86B7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -238,8 +282,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DF9F8B020190F75007E703D /* olsslgca.cer in Resources */,
 				2D31EAFD20162CFA0075C607 /* LaunchScreen.storyboard in Resources */,
 				2D31EAFA20162CFA0075C607 /* Assets.xcassets in Resources */,
+				2D4F5CCD2020D063006D5758 /* cert.der in Resources */,
+				2D151E372020AD5500C66E09 /* DSTRootCAX3.crt in Resources */,
 				2D31EAF820162CFA0075C607 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +306,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D8CFD3D24BE1815D5F16A83 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-certPinningDemo/Pods-certPinningDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1FCE351E75A0D9BB92D86B7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-certPinningDemo/Pods-certPinningDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E511CC02CAF5C23AD283813A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-certPinningDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2D31EAE920162CFA0075C607 /* Sources */ = {
@@ -370,7 +468,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -419,7 +517,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -428,11 +526,13 @@
 		};
 		2D31EB1A20162CFA0075C607 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 374C8992C554513B994A7B7F /* Pods-certPinningDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4Y2PN6E5NM;
 				INFOPLIST_FILE = certPinningDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zsombor.certPinningDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -442,11 +542,13 @@
 		};
 		2D31EB1B20162CFA0075C607 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F0387C7BABA1001241FD038 /* Pods-certPinningDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4Y2PN6E5NM;
 				INFOPLIST_FILE = certPinningDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zsombor.certPinningDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
