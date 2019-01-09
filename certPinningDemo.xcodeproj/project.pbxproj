@@ -17,7 +17,8 @@
 		2D31EB0A20162CFA0075C607 /* certPinningDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D31EB0920162CFA0075C607 /* certPinningDemoTests.m */; };
 		2D31EB1520162CFA0075C607 /* certPinningDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D31EB1420162CFA0075C607 /* certPinningDemoUITests.m */; };
 		2D4F5CCD2020D063006D5758 /* cert.der in Resources */ = {isa = PBXBuildFile; fileRef = 2D151E392020B9E600C66E09 /* cert.der */; };
-		2DF9F8B020190F75007E703D /* olsslgca.cer in Resources */ = {isa = PBXBuildFile; fileRef = 2DF9F8AF20190F75007E703D /* olsslgca.cer */; };
+		2D57840221D65D8A005DABD4 /* sfs.der in Resources */ = {isa = PBXBuildFile; fileRef = 2D57840121D65D89005DABD4 /* sfs.der */; };
+		2D57840721D66723005DABD4 /* 442leaf.der in Resources */ = {isa = PBXBuildFile; fileRef = 2D57840621D66723005DABD4 /* 442leaf.der */; };
 		597AEDC0D14D0431ADBC765E /* libPods-certPinningDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B2E25830DB1881DBC60D618 /* libPods-certPinningDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -58,7 +59,8 @@
 		2D31EB1020162CFA0075C607 /* certPinningDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = certPinningDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D31EB1420162CFA0075C607 /* certPinningDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = certPinningDemoUITests.m; sourceTree = "<group>"; };
 		2D31EB1620162CFA0075C607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2DF9F8AF20190F75007E703D /* olsslgca.cer */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = olsslgca.cer; sourceTree = "<group>"; };
+		2D57840121D65D89005DABD4 /* sfs.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = sfs.der; sourceTree = "<group>"; };
+		2D57840621D66723005DABD4 /* 442leaf.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = 442leaf.der; sourceTree = "<group>"; };
 		374C8992C554513B994A7B7F /* Pods-certPinningDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-certPinningDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-certPinningDemo/Pods-certPinningDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		8F0387C7BABA1001241FD038 /* Pods-certPinningDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-certPinningDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-certPinningDemo/Pods-certPinningDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -150,8 +152,9 @@
 			isa = PBXGroup;
 			children = (
 				2D151E362020AD5500C66E09 /* DSTRootCAX3.crt */,
+				2D57840121D65D89005DABD4 /* sfs.der */,
+				2D57840621D66723005DABD4 /* 442leaf.der */,
 				2D151E392020B9E600C66E09 /* cert.der */,
-				2DF9F8AF20190F75007E703D /* olsslgca.cer */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -282,9 +285,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DF9F8B020190F75007E703D /* olsslgca.cer in Resources */,
+				2D57840221D65D8A005DABD4 /* sfs.der in Resources */,
 				2D31EAFD20162CFA0075C607 /* LaunchScreen.storyboard in Resources */,
 				2D31EAFA20162CFA0075C607 /* Assets.xcassets in Resources */,
+				2D57840721D66723005DABD4 /* 442leaf.der in Resources */,
 				2D4F5CCD2020D063006D5758 /* cert.der in Resources */,
 				2D151E372020AD5500C66E09 /* DSTRootCAX3.crt in Resources */,
 				2D31EAF820162CFA0075C607 /* Main.storyboard in Resources */,
