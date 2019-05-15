@@ -66,12 +66,12 @@
     
     @try{
         [_manager GET:URL.absoluteString parameters:nil success:^(NSURLSessionTask *task, id responseObject) {
-            NSString *responseString = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
-            NSLog(@"%@", responseString);
-            _ContentArea.text = responseString;
+                NSString *responseString = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
+                NSLog(@"%@", responseString);
+                _ContentArea.text = responseString;
         } failure:^(NSURLSessionTask *operation, NSError *error) {
             NSLog(@"Error: %@", error);
-            _ContentArea.text =@"Error in %@",error.domain;
+            (void)(_ContentArea.text =@"Error in %@"),error.domain;
         }];
     }
     @catch(NSException *exception){
@@ -80,14 +80,15 @@
 }
 
 - (IBAction)pinnedCertPressed:(id)sender {
-    NSString *address= @"https://singleframesecurity.net:443/success.html";
-    //NSString *address= @"https://test.singleframesecurity.net:442/success.html";
+    //NSString *address= @"https://singleframesecurity.net:443/success.html";
+    NSString *address= @"https://test.singleframesecurity.net:442/success.html";
     //NSString *address= @"https://secure.singleframesecurity.net:444/success.html";
     _ContentArea.text = @"Tapped Pinned Cert.Getting content from remote server...";
     _urlTextView.text = address;
-    NSString *cerPath = [[NSBundle mainBundle] pathForResource:@"cert" ofType:@"der"];
+    NSString *cerPath = [[NSBundle mainBundle] pathForResource:@"sfs" ofType:@"der"];
     //cert.der - 443
-    //442_ca.der - 442
+    //442leaf.der - 442 leaf
+    //sfs.der - 442 root CA
     NSData *certData = [NSData dataWithContentsOfFile:cerPath];
     NSLog(@"CertPath:");
     NSLog(@"%@", cerPath);
@@ -98,6 +99,7 @@
     self.manager.requestSerializer.cachePolicy = NSURLRequestReloadIgnoringCacheData;
     AFSecurityPolicy *sec = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeCertificate withPinnedCertificates:[NSSet setWithObject:certData]];
     //AFSecurityPolicy *sec = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModePublicKey withPinnedCertificates:[NSSet setWithObject:certData]];
+    [sec setAllowInvalidCertificates:YES];
     _manager.securityPolicy = sec;
     
     @try{

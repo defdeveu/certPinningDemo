@@ -19,7 +19,6 @@
 		2D4F5CCD2020D063006D5758 /* cert.der in Resources */ = {isa = PBXBuildFile; fileRef = 2D151E392020B9E600C66E09 /* cert.der */; };
 		2D57840221D65D8A005DABD4 /* sfs.der in Resources */ = {isa = PBXBuildFile; fileRef = 2D57840121D65D89005DABD4 /* sfs.der */; };
 		2D57840721D66723005DABD4 /* 442leaf.der in Resources */ = {isa = PBXBuildFile; fileRef = 2D57840621D66723005DABD4 /* 442leaf.der */; };
-		597AEDC0D14D0431ADBC765E /* libPods-certPinningDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B2E25830DB1881DBC60D618 /* libPods-certPinningDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +69,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				597AEDC0D14D0431ADBC765E /* libPods-certPinningDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
