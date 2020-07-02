@@ -29,7 +29,7 @@
 }
 
 - (IBAction)plainTextButtonPressed:(id)sender {
-    NSString *address = @"http://singleframesecurity.net/success.html";
+    NSString *address = @"http://2006.labs.defdev.eu/success.html";
     
     _ContentArea.text = @"Downloading plain text connection";
     _urlTextView.text = address;
@@ -55,7 +55,7 @@
 }
 
 - (IBAction)osStorePressed:(id)sender {
-    NSString *address = @"https://singleframesecurity.net:443/success.html";
+    NSString *address = @"https://2006.labs.defdev.eu:443/success.html";
     _ContentArea.text = @"Downloading using OS store CA validation...";
     _urlTextView.text = address;
     
@@ -80,15 +80,10 @@
 }
 
 - (IBAction)pinnedCertPressed:(id)sender {
-    //NSString *address= @"https://singleframesecurity.net:443/success.html";
-    NSString *address= @"https://test.singleframesecurity.net:442/success.html";
-    //NSString *address= @"https://secure.singleframesecurity.net:444/success.html";
+    NSString *address= @"https://2006.labs.defdev.eu:444/success.html";
     _ContentArea.text = @"Tapped Pinned Cert.Getting content from remote server...";
     _urlTextView.text = address;
-    NSString *cerPath = [[NSBundle mainBundle] pathForResource:@"sfs" ofType:@"der"];
-    //cert.der - 443
-    //442leaf.der - 442 leaf
-    //sfs.der - 442 root CA
+    NSString *cerPath = [[NSBundle mainBundle] pathForResource:@"rootCA" ofType:@"der"];
     NSData *certData = [NSData dataWithContentsOfFile:cerPath];
     NSLog(@"CertPath:");
     NSLog(@"%@", cerPath);
@@ -98,7 +93,6 @@
     _manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     self.manager.requestSerializer.cachePolicy = NSURLRequestReloadIgnoringCacheData;
     AFSecurityPolicy *sec = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeCertificate withPinnedCertificates:[NSSet setWithObject:certData]];
-    //AFSecurityPolicy *sec = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModePublicKey withPinnedCertificates:[NSSet setWithObject:certData]];
     [sec setAllowInvalidCertificates:YES];
     _manager.securityPolicy = sec;
     
