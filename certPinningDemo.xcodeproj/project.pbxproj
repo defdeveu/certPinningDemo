@@ -15,7 +15,7 @@
 		2D31EB0020162CFA0075C607 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D31EAFF20162CFA0075C607 /* main.m */; };
 		2D31EB0A20162CFA0075C607 /* certPinningDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D31EB0920162CFA0075C607 /* certPinningDemoTests.m */; };
 		2D31EB1520162CFA0075C607 /* certPinningDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D31EB1420162CFA0075C607 /* certPinningDemoUITests.m */; };
-		2D4F5CCD2020D063006D5758 /* cert.der in Resources */ = {isa = PBXBuildFile; fileRef = 2D151E392020B9E600C66E09 /* cert.der */; };
+		2D4F5CCD2020D063006D5758 /* letsencrypt.der in Resources */ = {isa = PBXBuildFile; fileRef = 2D151E392020B9E600C66E09 /* letsencrypt.der */; };
 		2DE3C84024AD4367009FE7B3 /* rootCA.der in Resources */ = {isa = PBXBuildFile; fileRef = 2DE3C83F24AD4367009FE7B3 /* rootCA.der */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		2B2E25830DB1881DBC60D618 /* libPods-certPinningDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-certPinningDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D151E392020B9E600C66E09 /* cert.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = cert.der; sourceTree = "<group>"; };
+		2D151E392020B9E600C66E09 /* letsencrypt.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = letsencrypt.der; sourceTree = "<group>"; };
 		2D31EAED20162CFA0075C607 /* certPinningDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = certPinningDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D31EAF020162CFA0075C607 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2D31EAF120162CFA0075C607 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -146,7 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				2DE3C83F24AD4367009FE7B3 /* rootCA.der */,
-				2D151E392020B9E600C66E09 /* cert.der */,
+				2D151E392020B9E600C66E09 /* letsencrypt.der */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -280,7 +280,7 @@
 				2D31EAFD20162CFA0075C607 /* LaunchScreen.storyboard in Resources */,
 				2D31EAFA20162CFA0075C607 /* Assets.xcassets in Resources */,
 				2DE3C84024AD4367009FE7B3 /* rootCA.der in Resources */,
-				2D4F5CCD2020D063006D5758 /* cert.der in Resources */,
+				2D4F5CCD2020D063006D5758 /* letsencrypt.der in Resources */,
 				2D31EAF820162CFA0075C607 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

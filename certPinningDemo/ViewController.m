@@ -29,7 +29,7 @@
 }
 
 - (IBAction)plainTextButtonPressed:(id)sender {
-    NSString *address = @"http://2006.labs.defdev.eu/success.html";
+    NSString *address = @"http://zs.labs.defdev.eu/success.html";
     
     _ContentArea.text = @"Downloading plain text connection";
     _urlTextView.text = address;
@@ -55,7 +55,7 @@
 }
 
 - (IBAction)osStorePressed:(id)sender {
-    NSString *address = @"https://2006.labs.defdev.eu:443/success.html";
+    NSString *address = @"https://zs.labs.defdev.eu:443/success.html";
     _ContentArea.text = @"Downloading using OS store CA validation...";
     _urlTextView.text = address;
     
@@ -80,7 +80,7 @@
 }
 
 - (IBAction)pinnedCertPressed:(id)sender {
-    NSString *address= @"https://2006.labs.defdev.eu:444/success.html";
+    NSString *address= @"https://zs.labs.defdev.eu:444/success.html";
     _ContentArea.text = @"Tapped Pinned Cert.Getting content from remote server...";
     _urlTextView.text = address;
     NSString *cerPath = [[NSBundle mainBundle] pathForResource:@"rootCA" ofType:@"der"];
