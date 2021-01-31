@@ -80,30 +80,23 @@
 }
 
 - (IBAction)pinnedCertPressed:(id)sender {
-    NSString *address= @"https://zs.labs.defdev.eu:444/success.html";
-    _ContentArea.text = @"Tapped Pinned Cert.Getting content from remote server...";
+    NSString *address = @"https://zs.labs.defdev.eu:444/success.html";
+    _ContentArea.text = @"Downloading pinned CA validation...";
     _urlTextView.text = address;
-    NSString *cerPath = [[NSBundle mainBundle] pathForResource:@"rootCA" ofType:@"der"];
-    NSData *certData = [NSData dataWithContentsOfFile:cerPath];
-    NSLog(@"CertPath:");
-    NSLog(@"%@", cerPath);
-    //kickstart AFNetworking
+    
     NSURL *URL = [NSURL URLWithString:address];
     _manager = [AFHTTPSessionManager manager];
     _manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     self.manager.requestSerializer.cachePolicy = NSURLRequestReloadIgnoringCacheData;
-    AFSecurityPolicy *sec = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeCertificate withPinnedCertificates:[NSSet setWithObject:certData]];
-    [sec setAllowInvalidCertificates:YES];
-    _manager.securityPolicy = sec;
     
     @try{
         [_manager GET:URL.absoluteString parameters:nil success:^(NSURLSessionTask *task, id responseObject) {
-            NSString *responseString = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
-            NSLog(@"%@", responseString);
-            _ContentArea.text = responseString;
+                NSString *responseString = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
+                NSLog(@"%@", responseString);
+                _ContentArea.text = responseString;
         } failure:^(NSURLSessionTask *operation, NSError *error) {
             NSLog(@"Error: %@", error);
-            _ContentArea.text =@"Error during operation";
+            (void)(_ContentArea.text =@"Error in %@"),error.domain;
         }];
     }
     @catch(NSException *exception){
